@@ -1,7 +1,5 @@
 # Book Recommendation System
-### Check Out Our Blog On Book Recommendation System Here:
-<a href=https://ashima96.medium.com/building-a-book-recommendation-system-a98c58a4f1bb>Book Recommendation System</a>
-## Description:
+
 <p>A Book Recommendation System which recommends the users a selection of books based on their interests.</p>
 <p>Data used for this project was taken from <a href=http://www2.informatik.uni-freiburg.de/~cziegler/BX/>here</a></p>
 
@@ -56,17 +54,6 @@ c represents the mean rating of all the books.
 #### 2.3 User-Item Collaborative Filtering Recommendation
 Collaborative Filtering Recommendation System works by considering user ratings and finds cosine similarities in ratings by several users to recommend books. To implement this, we took only those books' data that have at least 50 ratings in all.
 
-#### 2.4 Correlation Based Recommendation
-For this model, we have created the correlation matrix considering only those books which have total ratings of more than 50. Then a user-book rating matrix is created. For the input book using the correlation matrix, top books are recommended.
-
-#### 2.5 Nearest Neighbour Based Recommendation
-To train the Nearest Neighbours model, we have created a compressed sparse row matrix taking ratings of each Book by each User individually. This matrix is used to train the Nearest Neighbours model and then to find n nearest neighbors using the cosine similarity metric.
-
-#### 2.6 Content Based Recommendation
-This system recommends books by calculating similarities in Book Titles. For this, TF-IDF feature vectors were created for unigrams and bigrams of Book-Titles; only those books' data has been considered which are having at least 80 ratings.
-
-#### 2.7 Hybrid Approach (Collaborative+Content) Recommendation
-A hybrid recommendation system was built using the combination of both content-based filtering and collaborative filtering systems. A percentile score is given to the results obtained from both content and collaborative filtering models and is combined to recommend top n books.
 
 ### 3. Libraries Used:
 
@@ -78,4 +65,4 @@ A hybrid recommendation system was built using the combination of both content-b
 
 ### 4. Acknowledgments:
 
-Machine Learning Monsoon 2020 (CSE543) @IIIT Delhi
+
